@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="?android:attr/colorPrimary">
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:minWidth="5dp"
+		android:minHeight="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/linearLayout1">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="?android:attr/colorPrimary"
+			android:id="@+id/LayoutAddNewCar">
+			<ImageView
+				android:clickable="true"
+				android:src="@drawable/add"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_centerVertical="true"
+				android:background="@drawable/ImageButton"
+				android:id="@+id/imgAddNewCar" />
+			<TextView
+				android:text="- Add Car"
+				android:layout_width="200px"
+				android:layout_height="20dp"
+				android:layout_marginLeft="5dp"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:textColor="?android:attr/colorPrimaryDark"
+				android:id="@+id/textviewAddCar" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minHeight="50dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:clickable="true"
+				android:src="@drawable/done"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_centerVertical="true"
+				android:background="@drawable/ImageButton"
+				android:id="@+id/imgDoneCars" />
+			<View
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_weight="1"/>
+			<CheckBox
+				android:clickable="true"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/DefinedButton"
+				android:id="@+id/chkCarCheckAll" />
+			<ImageView
+				android:clickable="true"
+				android:src="@drawable/remove"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_gravity="center"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="50dp"
+				android:background="@drawable/RemoveButton"
+				android:id="@+id/imgRemoveCar" />
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+		<GridView
+			android:minWidth="5dp"
+			android:minHeight="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:numColumns="2"
+			android:id="@+id/grdCars"/>
+		<TextView
+			android:text="No Cars To Display"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/txtNoCars" />
+	</RelativeLayout>
+</LinearLayout>

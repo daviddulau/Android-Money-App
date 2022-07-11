@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:background="?android:attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+		android:text="Apply"
+		android:clickable="true"
+		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnSortApply" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:background="?android:attr/colorPrimary"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="5dp">
+		<TextView
+			android:text="Sort By: "
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+		<Spinner
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimary"
+			android:id="@+id/spinnerTransactionsSortBy" />
+	</LinearLayout>
+</LinearLayout>

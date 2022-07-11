@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="?android:attr/colorPrimary">
+    <Switch
+        android:text="Set PIN"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="25dp"
+		android:textColor="?android:attr/colorPrimaryDark"
+		android:id="@+id/swtSetPIN"/>
+	<Switch
+        android:text="Login With Phone Security"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="25dp"
+		android:textColor="?android:attr/colorPrimaryDark"
+		android:id="@+id/swtSetLocalSecurity"/>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/GoogleSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:visibility="visible"/>
+	<LinearLayout
+        android:id="@+id/LayoutGoogleSignOutDisconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="invisible">
+		<Button
+			android:id="@+id/GoogleSignOutButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sign Out"
+			android:textColor="?android:attr/colorPrimary" />
+		<Button
+			android:id="@+id/GoogleDisconnectButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Disconnect"
+			android:textColor="?android:attr/colorPrimary" />
+	</LinearLayout>
+    <LinearLayout
+		android:visibility="invisible"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?android:attr/colorPrimary">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?android:attr/colorPrimary">
+			<TextView
+				android:text="UserName:"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAlignment="center"
+				android:inputType="text"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:textColor="?android:attr/colorPrimaryDark"
+				android:id="@+id/textviewLoginUserName" />
+			<EditText
+				android:text=""
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:textAlignment="center"
+				android:inputType="text"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:textColor="?android:attr/colorPrimaryDark"
+				android:id="@+id/txtLoginUserName" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?android:attr/colorPrimary">
+			<TextView
+				android:text="Password:"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAlignment="center"
+				android:inputType="text"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:textColor="?android:attr/colorPrimaryDark"
+				android:id="@+id/textviewLoginPassword" />
+			<EditText
+				android:text=""
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:textAlignment="center"
+				android:inputType="numberPassword"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:textColor="?android:attr/colorPrimaryDark"
+				android:id="@+id/txtLoginPassword" />
+		</LinearLayout>
+		<Button
+			android:text="Login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="@drawable/DefinedButton"
+			android:textColor="?android:attr/colorPrimary"
+			android:id="@+id/btnLogin"/>
+	</LinearLayout>
+</LinearLayout>

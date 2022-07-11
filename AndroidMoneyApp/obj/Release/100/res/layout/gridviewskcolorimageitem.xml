@@ -1,0 +1,2 @@
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><ImageView android:id="@+id/SKColorImage" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="5dp" /><TextView android:id="@+id/SKColorName" android:layout_width="fill_parent" android:layout_height="50dp" android:textAlignment="center" android:textColor="?android:attr/colorPrimaryDark" android:layout_margin="5dp" /></LinearLayout>

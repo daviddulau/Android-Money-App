@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:weightSum="100"
+	android:background="?android:attr/colorPrimary"
+    android:id="@+id/LayoutClickableCarObject">
+    <TextView
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="6.5pt"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:minHeight="50px"
+        android:minWidth="25px"
+        android:layout_weight="10"
+        android:id="@+id/txtGridCarObjectID" />
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="6.5pt"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_weight="30"
+        android:minHeight="15px"
+        android:minWidth="250px"
+        android:id="@+id/txtGridCarObjectName" />
+    <TextView
+        android:text="Expire in:"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="6.5pt"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_weight="30"
+        android:minHeight="15px"
+        android:minWidth="250px"
+        android:id="@+id/txtGridCarObjectExpiryDate" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="20px"
+        android:minHeight="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:id="@+id/linearLayout3">
+        <ImageView
+            android:clickable="true"
+		    android:src="@drawable/modify"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ImageButton"
+		    android:id="@+id/imgModifyCarObject" />
+        <ImageView
+            android:clickable="true"
+		    android:src="@drawable/remove"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/RemoveButton"
+		    android:id="@+id/imgRemoveCarObject" />
+    </LinearLayout>
+</LinearLayout>

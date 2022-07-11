@@ -1,0 +1,82 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:background="?android:attr/colorPrimary"
+    android:id="@+id/linearLayoutHorizontalOfNote">
+    <LinearLayout
+        android:background="@drawable/RoundedLinearLayout"
+        android:longClickable="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:minWidth="20px"
+        android:minHeight="20px"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutClickableNote">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="20px"
+            android:minHeight="20px"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:gravity="center"
+                android:id="@+id/chkGridNotesSelectionCheck" />
+            <TextView
+                android:text="ID"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:textSize="6.5pt"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:visibility="invisible"
+                android:id="@+id/txtGridNotesID" />
+            <TextView
+                android:text="Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6.5pt"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:gravity="center"
+                android:minHeight="250px"
+                android:minWidth="250px"
+                android:id="@+id/txtGridNotesTitle" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="20px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/linearLayout3">
+            <ImageView
+		        android:src="@drawable/Remove"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/RemoveButton"
+                android:id="@+id/imgGridNotesRemove" />
+            <TextView
+                android:text="Last Modified"
+                android:inputType="date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6.5pt"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:gravity="center"
+                android:minHeight="50px"
+                android:minWidth="200px"
+                android:id="@+id/txtGridNotesLastModified" />
+            </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

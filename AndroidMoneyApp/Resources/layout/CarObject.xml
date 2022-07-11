@@ -1,0 +1,112 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:minWidth="5dp"
+	android:minHeight="5dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="?android:attr/colorPrimary">
+	<LinearLayout
+		android:minWidth="5dp"
+		android:minHeight="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:orientation="horizontal"
+		android:weightSum="100"
+		android:id="@+id/LayoutStats1">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Name"
+			android:layout_marginLeft="5dp"
+			android:focusable="false"
+			android:layout_weight="30"
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/textviewCarObjectName"/>
+		<EditText
+			android:minWidth="350px"
+			android:inputType="text"
+			android:maxLength="15"
+			android:imeOptions="actionNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="65"
+			android:text="xxxxxxxxxx"
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/txtCarObjectName" />
+	</LinearLayout>
+	<LinearLayout
+		android:minWidth="5dp"
+		android:minHeight="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		android:weightSum="100"
+		android:id="@+id/LayoutStats2">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:layout_marginLeft="5dp"
+			android:text="Pick Begin Date"
+			android:layout_weight="30"
+			android:background="@drawable/DefinedButton"
+			android:textColor="?android:attr/colorPrimary"
+			android:id="@+id/btnCarObjectBeginDate" />
+		<EditText
+			android:maxLength="10"
+			android:inputType="date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Date"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:focusable="false"
+			android:layout_weight="70"
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/txtCarObjectBeginDate" />
+	</LinearLayout>
+	<LinearLayout
+		android:minWidth="5dp"
+		android:minHeight="5dp"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		android:weightSum="100"
+		android:id="@+id/LayoutStats3">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:layout_marginLeft="5dp"
+			android:text="Pick End Date"
+			android:layout_weight="30"
+			android:background="@drawable/DefinedButton"
+			android:textColor="?android:attr/colorPrimary"
+			android:id="@+id/btnCarObjectEndDate" />
+		<EditText
+			android:maxLength="10"
+			android:inputType="date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Date"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:focusable="false"
+			android:layout_weight="70"
+			android:background="?android:attr/colorPrimary"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/txtCarObjectEndDate" />
+	</LinearLayout>
+		<Button
+			android:text="Add"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:background="@drawable/DefinedButton"
+			android:textColor="?android:attr/colorPrimary"
+			android:id="@+id/btnAddOrModifyCarObject" />
+</LinearLayout>

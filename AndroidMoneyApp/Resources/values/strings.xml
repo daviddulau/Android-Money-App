@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Money App</string>
+	<string name="action_settings">Settings</string>
+
+	<string name="DarkMode">Dark Mode</string>
+
+	<!-- Header Layout-->
+	<string name="YearlyStats">Yearly Stats</string>
+	<string name="AddTransaction">Add</string>
+	<string name="MonthlyStats">Transactions</string>
+
+	<string name="Kilometer">Kilometer</string>
+	<string name="Liter">Liter</string>
+	<string name="Mile">Mile</string>
+	<string name="USGallon">US Gallon</string>
+	<string name="UKGallon">Gallon</string>
+</resources>

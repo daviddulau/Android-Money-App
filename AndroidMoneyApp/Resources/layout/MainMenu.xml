@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="?android:attr/colorPrimary">
+	<Button
+		android:text="Money"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnMoneyPart" />
+	<Button
+		android:text="Notes"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnNotesPart" />
+	<Button
+		android:text="Cars"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnCarsPart" />
+	<Button
+		android:text="Tags"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnTagsPart" />
+		<Button
+		android:text="Categories"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:layout_margin="5dp"
+		android:background="@drawable/DefinedButton"
+		android:textColor="?android:attr/colorPrimary"
+		android:id="@+id/btnCategoriesPart" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="?android:attr/colorPrimary">
+		<View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+		<TextView
+			android:text="Quick Transaction - "
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:textColor="?android:attr/colorPrimaryDark"
+			android:id="@+id/textviewQuickAddTransaction" />
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="15dp"
+			android:src="@drawable/add"
+			android:id="@+id/btnQuickAddTransaction" />
+	</LinearLayout>
+</LinearLayout>
